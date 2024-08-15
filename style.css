@@ -81,6 +81,9 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Sections Header
 --------------------------------*/
+
+
+
 .section-header {
   margin-bottom: 60px;
   position: relative;
@@ -169,15 +172,29 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   justify-content: center;
   width: 100%;
+}
+.header-1 {
+  position: relative;
+  display:flex; 
+  flex-direction: row;/* Adjust height as needed */
+  float: left;
+}
 
-  
+ .header-logo{
+  height: 100px;
+  width: 100px;
+  margin-left :10px;
+  margin-right:10px;
+}
+.navbar{
+ max-width:900px ;
 }
 .navbar ul {
   margin: 0;
   padding: 0;
   display: flex;
   list-style: none;
-  align-items: center;
+  align-items:center;
 }
 .navbar li {
   position: relative;
@@ -293,9 +310,26 @@ h1, h2, h3, h4, h5, h6 {
     display: block;
   }
 
+  .header-logo{
+    max-width:50px;
+    max-height: 50px;
+    margin: 0px;
+    padding: 0px;
+  }
+
   .navbar ul {
     display: none;
   }
+
+
+}
+
+@media (max-width:500px) {
+  .navbar{
+    max-width:150px;
+  }
+
+  
 }
 .navbar-mobile {
   position: fixed;
